@@ -24,9 +24,12 @@ class SporifyScrapper():
         self.driver = webdriver.Chrome("chromedriver_linux64/chromedriver", options=options)
         BASE_URL = "https://open.spotify.com/playlist/7tvfjPMPrM1RqNTakcONLt"
         self.driver.get(BASE_URL)
-
+    # second rebase
     def get_the_artists(self):
         time.sleep(5)
+        all_artists = []
+        all_artists = []
+        all_artists = []
         all_artists = []
         soup = BeautifulSoup(self.driver.page_source, 'html.parser')
         spans = soup.find_all("span", {"class": "Type__TypeElement-goli3j-0 hHrtFe rq2VQ5mb9SDAFWbBIUIn standalone-ellipsis-one-line"})
@@ -34,16 +37,21 @@ class SporifyScrapper():
             for link in span.find_all('a'):
                 # if link.text not in all_artists:
                 #     all_artists.append({link.text:link['href']})
-                # print(any(i for i,d in enumerate(all_artists) if link.text in d.keys()))
+                # print(any(i for i,d in enumerate(all_artists) if link.text in d.keys()))git fetch --all
                 if not any(i for i,d in enumerate(all_artists) if link.text in d.keys()):
                     all_artists.append({link.text:link['href']})
 
     def get_artist_details(self, all_artists):
-
-        
         print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+
 
 
 obj = SporifyScrapper()
 obj.search_song("bhool")
-# obj.get_the_artists()
