@@ -34,15 +34,14 @@ class SporifyScrapper():
             for link in span.find_all('a'):
                 # if link.text not in all_artists:
                 #     all_artists.append({link.text:link['href']})
-                # print(any(i for i,d in enumerate(all_artists) if link.text in d.keys()))
+                # print(any(i for i,d in enumerate(all_artists) if link.text in d.keys()))git fetch --all
                 if not any(i for i,d in enumerate(all_artists) if link.text in d.keys()):
                     all_artists.append({link.text:link['href']})
 
     def get_artist_details(self, all_artists):
-
         print(all_artists)
+
 
 
 obj = SporifyScrapper()
 obj.search_song("bhool")
-# obj.get_the_artists()
