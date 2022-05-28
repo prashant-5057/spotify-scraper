@@ -29,7 +29,6 @@ class SporifyScrapper():
         time.sleep(5)
         all_artists = []
         soup = BeautifulSoup(self.driver.page_source, 'html.parser')
-        # all_artists = soup.find_all('div', attrs={'role': 'row'})
         spans = soup.find_all("span", {"class": "Type__TypeElement-goli3j-0 hHrtFe rq2VQ5mb9SDAFWbBIUIn standalone-ellipsis-one-line"})
         for span in spans:
             for link in span.find_all('a'):
