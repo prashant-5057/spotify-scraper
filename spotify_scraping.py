@@ -24,7 +24,7 @@ class SporifyScrapper():
         self.driver = webdriver.Chrome("chromedriver_linux64/chromedriver", options=options)
         BASE_URL = "https://open.spotify.com/playlist/7tvfjPMPrM1RqNTakcONLt"
         self.driver.get(BASE_URL)
-
+    # second rebase
     def get_the_artists(self):
         time.sleep(5)
         all_artists = []
