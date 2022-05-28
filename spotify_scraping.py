@@ -34,8 +34,6 @@ class SporifyScrapper():
         spans = soup.find_all("span", {"class": "Type__TypeElement-goli3j-0 hHrtFe rq2VQ5mb9SDAFWbBIUIn standalone-ellipsis-one-line"})
         for span in spans:
             for link in span.find_all('a'):
-                # print(link.text,"  ",link['href'])
-                # print(link.text)
                 # if link.text not in all_artists:
                 #     all_artists.append({link.text:link['href']})
                 # print(any(i for i,d in enumerate(all_artists) if link.text in d.keys()))
