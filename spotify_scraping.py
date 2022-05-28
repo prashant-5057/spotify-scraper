@@ -28,6 +28,9 @@ class SporifyScrapper():
     def get_the_artists(self):
         time.sleep(5)
         all_artists = []
+        all_artists = []
+        all_artists = []
+        all_artists = []
         soup = BeautifulSoup(self.driver.page_source, 'html.parser')
         spans = soup.find_all("span", {"class": "Type__TypeElement-goli3j-0 hHrtFe rq2VQ5mb9SDAFWbBIUIn standalone-ellipsis-one-line"})
         for span in spans:
@@ -39,6 +42,13 @@ class SporifyScrapper():
                     all_artists.append({link.text:link['href']})
 
     def get_artist_details(self, all_artists):
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
+        print(all_artists)
         print(all_artists)
 
 
