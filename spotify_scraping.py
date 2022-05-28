@@ -40,7 +40,6 @@ class SporifyScrapper():
 
     def get_artist_details(self, all_artists):
 
-        
         print(all_artists)
 
 
